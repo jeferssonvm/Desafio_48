@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Desafio Practico platzi </title>
-    <style media="screen">
+  <title>invie</title>
+  <style media="screen">
+    body{
       margin: 0;
-      img {
-        max-widht:100%;
+    }
+    img{
+      max-width:100%;
+      vertical-align:top;
+      /*display:none;*/
+    }
+    img#responsive{
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      img#responsive{
+        display: block;
       }
-    </style>
-
+    }
+  </style>
   </head>
   <body>
-<img src="header.jpg" alt="">
-<img src="hero.jpg" alt="">
-<img src="acustica.jpg" alt="">
-<img src="clasica.jpg" alt="">
-<img src="footer.jpg" alt="">
+    <img src="invie-responsive.png" alt="" id="responsive">
+    <img src="header.jpg" alt="">
+    <img src="acustica.jpg" alt="">
+    <img src="clasica.jpg" alt="">
+    <img src="hero.jpg" alt="">
+    <img src="footer.jpg" alt="">
   </body>
 </html>
